@@ -113,8 +113,18 @@ fieldset div {
 label {
     font-size: 10px;
     font-weight: bold;
-    padding: 2px;
     color: white;
     background-color: black;
 }
 
+input:invalid {
+  border: red 2px solid;
+  border-radius: 5%;
+  opacity: .5;
+}
+
+input:valid {
+    border: rgb(13, 255, 13) 2px solid;
+    border-radius: 5%;
+    opacity: .5;
+}
