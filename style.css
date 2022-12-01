@@ -92,3 +92,13 @@ body {
 .main {
     margin: 15% 2rem;
 }
+
+form {
+    margin-top: 70px;
+}
+
+legend {
+    font-size: 18px;
+    color: rgb(57, 168, 125);
+    font-weight: bold;
+}
