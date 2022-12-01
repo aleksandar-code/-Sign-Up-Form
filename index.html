@@ -11,6 +11,23 @@
   <title>Sign Up Form</title>
 </head>
 <body>
+
+    <script>
+          
+          function passwordConfirmation() {
+            var password = document.getElementById("pass").value;
+            var confirmPassword = document.getElementById("confirmpass").value;
+           
+            if (password == "") {
+                alert("Error: The password field is Empty.");
+            } else if (password == confirmPassword) {
+                alert("Logged In");
+            } else {
+                alert("Please make sure your passwords match.")
+            }
+}
+    </script>
+
   <div class="wrapper">
     <div class="part-1">
         <div class="logo">
@@ -27,7 +44,7 @@
                 </h3>
             </div>
 
-            <form action="/index.html" method="post">
+            <form action="" method="">
                 <fieldset>
                     <legend>Let's do this!</legend>
                     
@@ -55,17 +72,17 @@
 
                    <div>
                         <span>
-                            <label for="pwd">PASSWORD</label> <br>
-                            <input type="password" id="pwd" name="password" required>
+                            <label for="pass">PASSWORD</label> <br>
+                            <input type="password" id="pass" name="pass" required>
                         </span>
                         <span>
-                            <label for="pwd-confirm">CONFIRM PASSWORD</label> <br>
-                            <input type="password" id="pwd-confirm" name="confirm-password" required>
+                            <label for="confirmpass">CONFIRM PASSWORD</label> <br>
+                            <input type="password" id="confirmpass" name="confirmpass" required>
                         </span>
                    </div>
                 </fieldset>
 
-                <button type="submit">Create Account</button>
+                <button type="submit" onclick="passwordConfirmation()">Create Account</button>
             </form>
         
             <p>Already have an account? <a href="index.html">Log in</a></p>
