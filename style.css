@@ -103,9 +103,12 @@ legend {
     font-weight: bold;
 }
 
-fieldset ul {
+fieldset div {
     margin: 15px -3px;
+    display: flex;
+    gap: 4rem;
 }
+
 
 label {
     font-size: 10px;
@@ -114,3 +117,4 @@ label {
     color: white;
     background-color: black;
 }
+
