@@ -68,20 +68,27 @@ body {
     width: auto;
     height: 6rem;
     font-size: 4rem;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 20%;
+    top: 30%;
 }
 
 .logo img {
     width: 5rem;
     height: 3.9rem;
+    filter: invert(1);
 }
+
 
 .part-2 {
     width: 65%;
     height: 100vh;
+}
+
+
+.main {
+    margin: 15% 2rem;
 }
