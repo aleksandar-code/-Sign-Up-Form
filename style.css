@@ -102,3 +102,7 @@ legend {
     color: rgb(57, 168, 125);
     font-weight: bold;
 }
+
+fieldset ul {
+    margin: 15px -3px;
+}
