@@ -88,24 +88,38 @@ body {
     height: 100vh;
 }
 
-
 .main {
-    margin: 15% 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+.main text{
+    height: 40vh;
+    margin: 15% 2em;
 }
 
 form {
-    margin-top: 70px;
+    height: 30vh;
+
 }
 
 legend {
     font-size: 18px;
     color: rgb(57, 168, 125);
     font-weight: bold;
+    
+}
+
+fieldset {
+    margin: 1.5em;
 }
 
 fieldset div {
     margin: 15px -3px;
     display: flex;
+    
     gap: 4rem;
 }
 
@@ -128,3 +142,22 @@ input:valid {
     border-radius: 5%;
     opacity: .5;
 }
+
+form::before {
+    content: "";
+    display: block;
+    margin: auto;
+    border-top:  rgba(95, 95, 95, 0.1) 1px solid;
+}
+
+form::after {
+    content: "";
+    display: block;
+    margin: auto;
+    border-top:  rgba(0, 0, 0, 0.1) 1px solid;
+    box-shadow: 5px;
+    position: relative;
+    top: -2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+}
+
