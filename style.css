@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,8 +20,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -48,6 +47,7 @@ table {
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
 }
 
@@ -55,11 +55,35 @@ body {
     height: 100vh;
     display: flex;
 }
-
+ 
 .part-1 {
-    width: 35%;
+    width: 40%;
+    height: 100vh;
+    background-image: url("/images/landscape.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.logo {
+    display: flex;
+    font-size: 4rem;
+    color: black;
+    background-color: aliceblue;
+    opacity: 0.3;
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 5rem;
+    height: 3.9rem;
+}
+
+
 .part-2 {
-    width: auto;
+    width: 60%;
+    height: 100vh;
 }
