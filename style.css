@@ -57,24 +57,23 @@ body {
 }
  
 .part-1 {
-    width: 40%;
+    width: 35%;
     height: 100vh;
     background-image: url("/images/landscape.svg");
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .logo {
     display: flex;
+    width: auto;
+    height: 6rem;
     font-size: 4rem;
     color: black;
-    background-color: aliceblue;
-    opacity: 0.3;
-    border-radius: 15px;
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: 20%;
 }
 
 .logo img {
@@ -82,8 +81,7 @@ body {
     height: 3.9rem;
 }
 
-
 .part-2 {
-    width: 60%;
+    width: 65%;
     height: 100vh;
 }
